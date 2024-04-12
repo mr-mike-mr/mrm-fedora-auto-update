@@ -1,0 +1,9 @@
+[Unit]
+Description=MRM Fedora Startup
+
+[Service]
+ExecStart=/usr/bin/fedora_update.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
